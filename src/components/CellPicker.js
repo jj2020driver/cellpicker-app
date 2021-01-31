@@ -10,7 +10,7 @@ function CellPicker() {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(fetchModes("http://demo1030918.mockable.io/"));
+        dispatch(fetchModes("https://demo1030918.mockable.io/"));
     }, []);
 
     return (
