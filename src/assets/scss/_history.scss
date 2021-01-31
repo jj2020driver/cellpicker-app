@@ -1,0 +1,29 @@
+.history {
+    padding-top: 4px;
+    h2 {
+        margin: 0;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.1;
+    }
+    .record {
+        margin-bottom: 7px;
+        padding: 14px 6px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.2;
+        background: $color-record-bg;
+        color: $color-record-text;
+        border-radius: 5px;
+        border: 1px solid darken($color-record-bg, 10%);
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .records {
+        position: relative;
+        height: 262px;
+        margin-top: 25px;
+        overflow-y: auto;
+    }
+}

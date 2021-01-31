@@ -1,0 +1,17 @@
+.cellpicker {
+    display: grid;
+    grid-gap: 20px;
+    @media screen and (min-width: 751px) {
+        position: relative;
+        left: 60px;
+        grid-template-rows: auto 1fr;
+        grid-template-areas:
+            "panel history"
+            "cells history";
+        grid-column-gap: 50px;
+        .history {
+            grid-area: history;
+            width: 250px;
+        }
+    }
+}

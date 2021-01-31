@@ -1,0 +1,24 @@
+.cells-grid {
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    .cell {
+        width: 60px;
+        border: 1px solid #000;
+        transition: background $time12;
+        &::before {
+            content: "";
+            display: block;
+            padding-top: 100%;
+        }
+    }
+    &.game-started {
+        .cell {
+            cursor: pointer;
+            &:hover {
+                background: $color-ui-selection;
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.actions-panel {
+    min-width: 301px;
+    display: flex;
+    > * {
+        margin-right: 10px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .select {
+        flex: auto;
+        &__indicator-separator {
+            display: none;
+        }
+        &__control {
+            border-radius: 0;
+            border-color: #000;
+            box-shadow: none;
+            cursor: pointer;
+            &:hover {
+                border-color: #000;
+            }
+        }
+        &__menu {
+            border-radius: 0;
+            box-shadow: none;
+            border: 1px solid #ddd;
+        }
+        &__option {
+            cursor: pointer;
+            &--is-selected {
+                background: $color-ui-main;
+            }
+            &:active {
+                color: #fff;
+                background: $color-ui-main;
+            }
+        }
+    }
+    .button {
+        appearance: none;
+        outline: none;
+        border: none;
+        min-width: 100px;
+        padding: 5px 15px;
+        background: $color-ui-main;
+        border-radius: 3px;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: .3px;
+        color: #fff;
+        text-transform: uppercase;
+        &:enabled {
+            cursor: pointer;
+            transition: background $time12;
+            &:hover {
+                background: darken($color-ui-main, 7%);
+            }
+        }
+    }
+}
