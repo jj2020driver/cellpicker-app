@@ -1,8 +1,8 @@
 ## Cell picker app
 
-- Created with Create React App;
-- State management: Redux;
-- Styling: Sass;
+- Created with Create React App
+- State management: Redux
+- Styling: Sass
 - Custom components: "react-select"
 
 ### How to use
